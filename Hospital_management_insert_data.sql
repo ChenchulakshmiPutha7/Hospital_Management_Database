@@ -1,4 +1,4 @@
--- INSERT PATIENTS (20)
+-- INSERT PATIENTS
 INSERT INTO patients (full_name, gender, age, phone, address) VALUES
 ('Suresh Kumar', 'Male', 52, '9876501111', 'Hyderabad'),
 ('Lakshmi Devi', 'Female', 43, '9876502222', 'Chennai'),
@@ -21,7 +21,7 @@ INSERT INTO patients (full_name, gender, age, phone, address) VALUES
 ('Manish Yadav', 'Male', 46, '9876519999', 'Patna'),
 ('Soniya Arora', 'Female', 25, '9876520000', 'Noida');
 
--- INSERT DOCTORS (10)
+-- INSERT DOCTORS 
 INSERT INTO doctors (full_name, specialization, phone, experience_years) VALUES
 ('Dr. Sharma', 'Orthopedic', '9812341111', 14),
 ('Dr. Kapoor', 'Pediatrician', '9812342222', 8),
@@ -34,7 +34,7 @@ INSERT INTO doctors (full_name, specialization, phone, experience_years) VALUES
 ('Dr. Gupta', 'Neurologist', '9812349999', 18),
 ('Dr. Farhan Ali', 'Psychiatrist', '9812340000', 6);
 
--- INSERT APPOINTMENTS (all IDs corrected)
+-- INSERT APPOINTMENTS
 INSERT INTO appointments (patient_id, doctor_id, appointment_date, status) VALUES
 (4, 5, '2025-02-01', 'Completed'),
 (7, 3, '2025-02-02', 'Completed'),
@@ -57,7 +57,7 @@ INSERT INTO appointments (patient_id, doctor_id, appointment_date, status) VALUE
 (14, 9, '2025-02-21', 'Completed'),
 (1, 5, '2025-02-22', 'Completed');
 
--- INSERT TREATMENTS (correct IDs)
+-- INSERT TREATMENTS 
 INSERT INTO treatments (patient_id, doctor_id, description, treatment_date) VALUES
 (4, 5, 'Fracture checkup', '2025-02-01'),
 (7, 3, 'Migraine treatment', '2025-02-02'),
@@ -70,7 +70,7 @@ INSERT INTO treatments (patient_id, doctor_id, description, treatment_date) VALU
 (3, 4, 'Blood pressure evaluation', '2025-02-18'),
 (1, 5, 'Joint pain therapy', '2025-02-22');
 
--- INSERT MEDICATIONS (correct IDs)
+-- INSERT MEDICATIONS
 INSERT INTO medications (patient_id, doctor_id, medicine_name, dosage, start_date, end_date) VALUES
 (4, 5, 'Calcium', '500mg', '2025-02-01', '2025-02-10'),
 (7, 3, 'Pain Relief', '50mg', '2025-02-02', '2025-02-05'),
@@ -83,7 +83,7 @@ INSERT INTO medications (patient_id, doctor_id, medicine_name, dosage, start_dat
 (3, 4, 'BP Tablet', '5mg', '2025-02-18', '2025-02-28'),
 (1, 5, 'Joint Supplement', '500mg', '2025-02-22', '2025-03-05');
 
--- INSERT BILLING (fixed treatment_id range 1–10)
+-- INSERT BILLING 
 INSERT INTO billing (patient_id, treatment_id, amount, bill_date, payment_status) VALUES
 (4, 1, 2200, '2025-02-01', 'Paid'),
 (7, 2, 1800, '2025-02-02', 'Pending'),
@@ -95,3 +95,4 @@ INSERT INTO billing (patient_id, treatment_id, amount, bill_date, payment_status
 (17, 8, 3500, '2025-02-17', 'Pending'),
 (3, 9, 2100, '2025-02-18', 'Paid'),
 (1, 10, 2700, '2025-02-22', 'Paid');
+
